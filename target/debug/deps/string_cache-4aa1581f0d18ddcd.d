@@ -1,0 +1,11 @@
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/string_cache-4aa1581f0d18ddcd.rmeta: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/atom.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/dynamic_set.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/static_sets.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/trivial_impls.rs
+
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/libstring_cache-4aa1581f0d18ddcd.rlib: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/atom.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/dynamic_set.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/static_sets.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/trivial_impls.rs
+
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/string_cache-4aa1581f0d18ddcd.d: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/atom.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/dynamic_set.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/static_sets.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/trivial_impls.rs
+
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/lib.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/atom.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/dynamic_set.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/static_sets.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/string_cache-0.8.4/src/trivial_impls.rs:

@@ -1,0 +1,13 @@
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/url-bc86eaf6419b2351.rmeta: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/host.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/origin.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/parser.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/path_segments.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/slicing.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/quirks.rs
+
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/liburl-bc86eaf6419b2351.rlib: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/host.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/origin.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/parser.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/path_segments.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/slicing.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/quirks.rs
+
+/Users/hejian/Desktop/work_project/rust_project/scrape_url/target/debug/deps/url-bc86eaf6419b2351.d: /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/lib.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/host.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/origin.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/parser.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/path_segments.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/slicing.rs /Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/quirks.rs
+
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/lib.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/host.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/origin.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/parser.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/path_segments.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/slicing.rs:
+/Users/hejian/.cargo/registry/src/github.com-1ecc6299db9ec823/url-2.2.2/src/quirks.rs:
