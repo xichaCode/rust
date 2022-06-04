@@ -61,3 +61,10 @@ fn sum<T: Add<T ,Output=T>>(a: T, b: T) -> T {
 fn geeet(name :String)  {
     println!("hello {} ,name: {}",name,name)
 }
+
+pub struct BufReader<R> {
+    inner : R,
+    buf: Box<u8>,
+    pos: usize,
+    cap: usize,
+}
