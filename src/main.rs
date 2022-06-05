@@ -1,4 +1,5 @@
 #![allow(dead_code, unused_imports)]
+
 use std::process::Output;
 use std::ops::Add;
 
@@ -67,4 +68,35 @@ pub struct BufReader<R> {
     buf: Box<u8>,
     pos: usize,
     cap: usize,
+}
+
+pub struct BuffReader<R> {
+    inner : R,
+    buf: Box<u8>,
+    pos: usize,
+    cap: usize,
+}
+#[derive(Debug, Default, PartialEq, Eq)]
+pub struct Identfier {
+    inner: u64,
+}
+#[derive(Debug, Default, PartialEq, Eq)]
+pub struct User {
+    id: Identfier
+}
+#[derive(Debug, Default, PartialEq, Eq)]
+pub struct Product  {
+    id: Identfier
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn id_should_be_the_same(){
+        let user = User::default();
+        let product = Product::default();
+        assert_eq!(user.id.inner, product.id.inner);
+    }
 }
