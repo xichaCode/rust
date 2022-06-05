@@ -18,7 +18,7 @@ pub trait Free {
     fn feature2(&self);
 }
 
-pub trait Persion1: Free {
+pub trait Personal: Free {
     fn advance_feature(&self);
 }
 
@@ -32,7 +32,7 @@ impl<T> Free for Customer<T>{
     }
 }
 
-impl <T> prersonl for Customer<PersonalPlan>{
+impl Personal for Customer<PersonalPlan>{
     fn advance_feature(&self) {
         println!("Dear {}(as our valuable customer {}), enjoy this advanced feature!",self.name, self.id );
     }
@@ -51,7 +51,28 @@ impl <T> Customer<T> {
     }
 }
 
+impl From<Customer<FreePlan>> for Customer<PersonalPlan> {
+    fn from(plan: Customer<FreePlan>) -> Self {
+        Self::new(plan.name)
+    }
+}
+
 pub fn subscribe(customer: Customer<FreePlan>, payment: f32) -> Customer<PersonalPlan>{
     let _plan = PersonalPlan(payment);
     customer.into()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_customer(){
+        let customer = Customer::<FreePlan>::new("hejina".into());
+        customer.feature1();
+        customer.feature2();
+        let customer = subscribe(customer, 6.99);
+        customer.feature1();
+        customer.feature2();
+        customer.advance_feature();
+    }
 }

@@ -1,8 +1,9 @@
 #![allow(dead_code, unused_imports)]
-
+mod stdrrdemo;
 use std::marker::PhantomData;
 use std::process::Output;
 use std::ops::Add;
+use stdrrdemo::subscribe;
 
 
 fn main() {
@@ -20,6 +21,7 @@ fn main() {
 
     let my_name = "Pascal".to_string();
     geeet(my_name);
+    
 }
 pub trait Summary {
     fn summary(&self) -> String;
