@@ -1,5 +1,6 @@
 #![allow(dead_code, unused_imports)]
 
+use std::marker::PhantomData;
 use std::process::Output;
 use std::ops::Add;
 
@@ -77,16 +78,17 @@ pub struct BuffReader<R> {
     cap: usize,
 }
 #[derive(Debug, Default, PartialEq, Eq)]
-pub struct Identfier {
+pub struct Identfier<T> {
     inner: u64,
+    _tag: PhantomData<T>,
 }
 #[derive(Debug, Default, PartialEq, Eq)]
 pub struct User {
-    id: Identfier
+    id: Identfier<Self>
 }
 #[derive(Debug, Default, PartialEq, Eq)]
 pub struct Product  {
-    id: Identfier
+    id: Identfier<Self>
 }
 
 #[cfg(test)]
@@ -97,6 +99,7 @@ mod test {
     fn id_should_be_the_same(){
         let user = User::default();
         let product = Product::default();
+        // assert_eq!(user.id,product.id);
         assert_eq!(user.id.inner, product.id.inner);
     }
 }
