@@ -93,6 +93,8 @@ pub struct Product  {
     id: Identfier<Self>
 }
 
+
+
 #[cfg(test)]
 mod test {
     use super::*;
@@ -105,3 +107,4 @@ mod test {
         assert_eq!(user.id.inner, product.id.inner);
     }
 }
+

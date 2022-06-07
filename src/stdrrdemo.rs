@@ -69,6 +69,14 @@ pub fn subscribe(customer: Customer<FreePlan>, payment: f32) -> Customer<Persona
     customer.into()
 }
 
+struct Person {
+    name: String,
+    sex: Option<String>,
+    age: Option<u32>,
+}
+
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
