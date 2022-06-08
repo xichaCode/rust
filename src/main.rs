@@ -93,6 +93,28 @@ pub struct Product  {
     id: Identfier<Self>
 }
 
+trait Playable {
+    fn play(&self);
+    fn pause(&self){
+        println!("pause")
+    }
+    fn get_duration(&self) -> f32;
+}
+
+struct Audio {
+    name: String,
+    duration: f32,
+}
+
+impl Playable for Audio {
+    fn play(&self){
+        println!("Listener audio: {}" ,self.name);
+    }
+
+    fn get_duration(&self) -> f32 {
+        self.duration
+    }
+}
 
 
 #[cfg(test)]
