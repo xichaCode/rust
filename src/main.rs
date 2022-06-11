@@ -1,132 +1,22 @@
-#![allow(dead_code, unused_imports)]
-mod stdrrdemo;
-use std::marker::PhantomData;
-use std::process::Output;
-use std::ops::Add;
-use stdrrdemo::subscribe;
-
+use nom::character::is_digit;
+use nom::byte::streaming::take_while;
+use nom::IResult;
 
 fn main() {
-    let tweet = Tweet {
-        usernames: String::from("horse_ebooks"),
-        content: String::from("of course, as you probably already have"),
-        reply: false,
-        retweet: false,
-    };
-
-    println!("1 new tweet {}" ,tweet.summary());
-
-    assert_eq!(sum(1u32, 2u32), 3);
-    assert_eq!(sum(1u64,2u64), 3);
-
-    let my_name = "Pascal".to_string();
-    geeet(my_name);
     
-}
-pub trait Summary {
-    fn summary(&self) -> String;
-}
-
-struct NesAritics {
-    pub headline: String,
-    pub location: String,
-    pub author: String,
-    pub content: String,
-
-}
-
-struct Tweet {
-    pub usernames: String,
-    pub content: String,
-    pub reply: bool,
-    pub retweet: bool,
-}
-
-
-
-impl Summary for Tweet {
-    fn summary(&self) -> String {
-        format!("{}, by {}, ({}),{}", self.usernames
-        ,self.content, self.reply,self.retweet)
-    }
     
 }
 
-impl Summary for NesAritics{
-    fn summary(&self) -> String {
-        format!("{}, by {},is {} is {}",self.author,  self.content, self.headline, self.location)
-    }
+fn jud_digit(char: char) -> bool {
+    is_digit(chr as u8)
 }
 
-fn sum<T: Add<T ,Output=T>>(a: T, b: T) -> T {
-    a + b
-}
+#[test]
+fn test_split_digit() {
+    let s = "123abc";
+    let r: IResult<&str, &str> = take_while(jud_digit)(s);
 
-fn geeet(name :String)  {
-    println!("hello {} ,name: {}",name,name)
+    let remain_expanded = "abc";
+    let digit_expected ="123";
+    assert_eq!(Ok((remain_expanded, digit_expected)), r)ß
 }
-
-pub struct BufReader<R> {
-    inner : R,
-    buf: Box<u8>,
-    pos: usize,
-    cap: usize,
-}
-
-pub struct BuffReader<R> {
-    inner : R,
-    buf: Box<u8>,
-    pos: usize,
-    cap: usize,
-}
-#[derive(Debug, Default, PartialEq, Eq)]
-pub struct Identfier<T> {
-    inner: u64,
-    _tag: PhantomData<T>,
-}
-#[derive(Debug, Default, PartialEq, Eq)]
-pub struct User {
-    id: Identfier<Self>
-}
-#[derive(Debug, Default, PartialEq, Eq)]
-pub struct Product  {
-    id: Identfier<Self>
-}
-
-trait Playable {
-    fn play(&self);
-    fn pause(&self){
-        println!("pause")
-    }
-    fn get_duration(&self) -> f32;
-}
-
-struct Audio {
-    name: String,
-    duration: f32,
-}
-
-impl Playable for Audio {
-    fn play(&self){
-        println!("Listener audio: {}" ,self.name);
-    }
-
-    fn get_duration(&self) -> f32 {
-        self.duration
-    }
-}
-
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    #[test]
-    fn id_should_be_the_same(){
-        let user = User::default();
-        let product = Product::default();
-        // assert_eq!(user.id,product.id);
-        assert_eq!(user.id.inner, product.id.inner);
-    }
-}
-
